@@ -8,3 +8,4 @@ end
 
 gem 'json'
 gem 'redis'
+gem 'httparty'

@@ -1,6 +1,7 @@
 module EveCrest
   module Request
-    class Constellation
+    class Constellations
+
     end
   end
 end
