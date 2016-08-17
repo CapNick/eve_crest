@@ -13,17 +13,15 @@ module EveCrest
       def planets
         #only returns an array planets ids
         _planets = Array.new
-        data['planets'].each do |s|
-          _planets.push(s['href'].to_s.split('/')[4])
+        data['planets'].each do |p|
+          _planets.push(p['href'].to_s.split('/')[4].to_i)
         end
         _planets
       end
       def moons
         _moons = Array.new
-        data['planets'].each do |s|
-          s['moons'].each do |m|
-            _moons.push(m['href'].to_s.split('/')[4])
-          end
+        data['planets'].each do |p|
+          _moons.push(p['moons'].to_s.split('/')[4].to_i)
         end
         _moons
       end
