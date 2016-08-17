@@ -10,11 +10,21 @@ require_relative 'base_response'
 
 #Requests
 require_relative 'requests/constellation'
+require_relative 'requests/constellations'
 require_relative 'requests/region'
+require_relative 'requests/regions'
+require_relative 'requests/solar_system'
+require_relative 'requests/solar_systems'
+require_relative 'requests/stargate'
 
 #Responses
 require_relative 'responses/constellation'
+require_relative 'responses/constellations'
 require_relative 'responses/region'
+require_relative 'responses/regions'
+require_relative 'responses/solar_system'
+require_relative 'responses/solar_systems'
+require_relative 'responses/stargate'
 
 
 
