@@ -32,7 +32,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/eve_crest.
+Bug reports and pull requests are welcome on GitLab at https://git.capnick.co.uk/capnick/eve_crest.
 
 
 ## License
