@@ -13,7 +13,7 @@ RSpec.describe EveCrest::Request::Opportunities::Groups do
     it 'returns a list of group names' do
       expect(response.name_list.length).to eq(19)
     end
-    if 'returns the total count of ids'
+    it 'returns the total count of ids' do
       expect(response.count).to eq(19)
     end
   end
