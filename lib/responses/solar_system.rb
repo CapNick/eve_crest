@@ -1,9 +1,6 @@
 module EveCrest
   module Response
     class SolarSystem < BaseResponse
-      def raw
-        data
-      end
       def name
         data['name']
       end

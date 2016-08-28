@@ -1,9 +1,6 @@
 module EveCrest
   module Response
     class Regions < BaseResponse
-      def raw
-        data
-      end
       def region_ids
         #only returns an array constellation ids
         _regions = Array.new

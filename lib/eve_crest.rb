@@ -9,23 +9,49 @@ require_relative 'https_request'
 require_relative 'base_response'
 
 #Requests
+##Constellation
 require_relative 'requests/constellation'
 require_relative 'requests/constellations'
+##Region
 require_relative 'requests/region'
 require_relative 'requests/regions'
+##SolarSystem
 require_relative 'requests/solar_system'
 require_relative 'requests/solar_systems'
+##Planet
+
+##Moon
+
+##Stargate
 require_relative 'requests/stargate'
+##Opportunities
+require_relative 'requests/opportunities/group'
+require_relative 'requests/opportunities/groups'
+require_relative 'requests/opportunities/task'
+require_relative 'requests/opportunities/tasks'
+
 
 #Responses
+##Constellation
 require_relative 'responses/constellation'
 require_relative 'responses/constellations'
+##Region
 require_relative 'responses/region'
 require_relative 'responses/regions'
+##SolarSystem
 require_relative 'responses/solar_system'
 require_relative 'responses/solar_systems'
-require_relative 'responses/stargate'
+##Planet
 
+##Moon
+
+##Stargate
+require_relative 'responses/stargate'
+##Opportunities
+require_relative 'responses/opportunities/group'
+require_relative 'responses/opportunities/groups'
+require_relative 'responses/opportunities/task'
+require_relative 'responses/opportunities/tasks'
 
 
 #Extra Information

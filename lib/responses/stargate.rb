@@ -1,9 +1,6 @@
 module EveCrest
   module Response
     class Stargate < BaseResponse
-      def raw
-        data
-      end
       def position
         data['position']
       end

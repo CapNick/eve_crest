@@ -1,9 +1,6 @@
 module EveCrest
   module Response
     class SolarSystems < BaseResponse
-      def raw
-        data
-      end
       def solar_system_ids
         #only returns an array solarsystem ids
         _solar_system = Array.new

@@ -7,7 +7,9 @@ module EveCrest
     def success?
       !data.has_key?('exceptionType')
     end
-
+    def raw
+      data
+    end
     def error_message
       if success?
         nil

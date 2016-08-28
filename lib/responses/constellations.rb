@@ -1,9 +1,6 @@
 module EveCrest
   module Response
     class Constellations < BaseResponse
-      def raw
-        data
-      end
       def constellation_ids
         #only returns an array constellation ids
         _constellations = Array.new

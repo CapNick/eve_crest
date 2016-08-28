@@ -1,9 +1,6 @@
 module EveCrest
   module Response
     class Constellation < BaseResponse
-      def raw
-        data
-      end
       def region
         data['region'].to_s.split('/')[4].to_i
       end
