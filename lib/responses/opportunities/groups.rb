@@ -1,18 +1,20 @@
 module EveCrest
   module Response
     module Opportunities
-      class Groups
-        def id_list
+      class Groups < BaseResponse
+        def ids
           _ids = Array.new
           data['items'].each do |i|
             _ids.push(i['id'])
           end
+          _ids
         end
-        def name_list
-          _ids = Array.new
+        def names
+          _names = Array.new
           data['items'].each do |i|
-            _ids.push(i['name'])
+            _names.push(i['name'])
           end
+          _names
         end
         def count
           data['totalCount']

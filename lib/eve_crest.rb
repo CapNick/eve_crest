@@ -19,9 +19,9 @@ require_relative 'requests/regions'
 require_relative 'requests/solar_system'
 require_relative 'requests/solar_systems'
 ##Planet
-
+require_relative 'requests/planet'
 ##Moon
-
+require_relative 'requests/moon'
 ##Stargate
 require_relative 'requests/stargate'
 ##Opportunities
@@ -42,9 +42,9 @@ require_relative 'responses/regions'
 require_relative 'responses/solar_system'
 require_relative 'responses/solar_systems'
 ##Planet
-
+require_relative 'responses/planet'
 ##Moon
-
+require_relative 'responses/moon'
 ##Stargate
 require_relative 'responses/stargate'
 ##Opportunities

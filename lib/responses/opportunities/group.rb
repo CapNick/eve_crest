@@ -1,7 +1,7 @@
 module EveCrest
   module Response
     module Opportunities
-      class Group
+      class Group < BaseResponse
         def name
           data['name']
         end
@@ -13,6 +13,10 @@ module EveCrest
           data['achievementTasks'].each do |t|
             _tasks.push(t['id'])
           end
+        end
+        # group connections only have one item ever in them ?????
+        def group_connection
+          data['groupConnections'].first['id']
         end
       end
     end
