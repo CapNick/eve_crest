@@ -8,10 +8,10 @@ RSpec.describe EveCrest::Request::Opportunities::Groups do
       expect(response.success?).to eq(true)
     end
     it 'returns a list of group ids' do
-      expect(response.id_list.length).to eq(19)
+      expect(response.ids.length).to eq(19)
     end
     it 'returns a list of group names' do
-      expect(response.name_list.length).to eq(19)
+      expect(response.names.length).to eq(19)
     end
     it 'returns the total count of ids' do
       expect(response.count).to eq(19)

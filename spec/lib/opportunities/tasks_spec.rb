@@ -8,10 +8,10 @@ RSpec.describe EveCrest::Request::Opportunities::Tasks do
       expect(response.success?).to eq(true)
     end
     it 'returns a list of task ids' do
-      expect(response.id_list.length).to eq(59)
+      expect(response.ids.length).to eq(59)
     end
-    it 'returns a list of task ids' do
-      expect(response.name_list.length).to eq(59)
+    it 'returns a list of task names' do
+      expect(response.names.length).to eq(59)
     end
     it 'has an amount of tasks' do
       expect(response.count).to eq(59)

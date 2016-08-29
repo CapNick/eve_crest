@@ -1,8 +1,8 @@
 require 'eve_crest'
 
 RSpec.describe EveCrest::Request::Opportunities::Task do
-  context 'Get Groups' do
-    request = EveCrest::Request::Opportunities::Task.new(100)
+  context 'Get Task' do
+    request = EveCrest::Request::Opportunities::Task.new(2)
     response = request.get
     it 'is successful' do
       expect(response.success?).to eq(true)
