@@ -7,6 +7,6 @@ group :development do
   gem 'simplecov'
 end
 
-gem 'json'
+gem 'json', '~> 1.8.3'
 gem 'redis'
 gem 'httparty'
