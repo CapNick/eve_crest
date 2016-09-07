@@ -8,7 +8,7 @@ RSpec.describe EveCrest::Request::Time do
       expect(response.success?).to eq(true)
     end
     it 'returns the server time' do
-      expect(response.success?).to eq(true)
+      expect(response.get).to be_a_kind_of(DateTime)
     end
   end
 end

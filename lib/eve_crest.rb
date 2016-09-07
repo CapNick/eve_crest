@@ -29,7 +29,9 @@ require_relative 'requests/opportunities/group'
 require_relative 'requests/opportunities/groups'
 require_relative 'requests/opportunities/task'
 require_relative 'requests/opportunities/tasks'
-
+##Server
+require_relative 'requests/server'
+require_relative 'requests/time'
 
 #Responses
 ##Constellation
@@ -52,7 +54,9 @@ require_relative 'responses/opportunities/group'
 require_relative 'responses/opportunities/groups'
 require_relative 'responses/opportunities/task'
 require_relative 'responses/opportunities/tasks'
-
+##Server
+require_relative 'responses/server'
+require_relative 'responses/time'
 
 #Extra Information
 DEFAULT_CACHE_TIME = 86400000
