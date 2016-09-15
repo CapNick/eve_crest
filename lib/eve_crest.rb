@@ -32,6 +32,11 @@ require_relative 'requests/opportunities/tasks'
 ##Server
 require_relative 'requests/server'
 require_relative 'requests/time'
+##Incursions
+require_relative 'requests/incursions'
+##Wars
+require_relative 'requests/wars'
+require_relative 'requests/war'
 
 #Responses
 ##Constellation
@@ -57,6 +62,11 @@ require_relative 'responses/opportunities/tasks'
 ##Server
 require_relative 'responses/server'
 require_relative 'responses/time'
+##Incursions
+require_relative 'responses/incursions'
+##Wars
+require_relative 'responses/wars'
+require_relative 'responses/war'
 
 #Extra Information
 DEFAULT_CACHE_TIME = 86400000

@@ -1,6 +1,7 @@
 module EveCrest
   class HTTPSRequest
     def self.get(_uri)
+      # Need to make get have two params so the time to be cached can be respected
       uri = URI("#{CREST_URL}#{_uri}")
 
       cache = REDIS.get(uri)
