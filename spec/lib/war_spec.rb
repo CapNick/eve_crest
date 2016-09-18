@@ -29,10 +29,10 @@ RSpec.describe EveCrest::Request::War do
       expect(response.aggressor_kills_isk).to eq(0)
     end
     it 'returns war defender id' do
-      expect(response.defender_id).to eq(true)
+      expect(response.defender_id).to eq(147021110)
     end
     it 'returns war defender name' do
-      expect(response.defender_name).to eq(true)
+      expect(response.defender_name).to eq('Dynant Industries')
     end
     it 'has defender kills' do
       expect(response.defender_kills).to eq(0)
@@ -44,13 +44,13 @@ RSpec.describe EveCrest::Request::War do
       expect(response.open_for_allies?).to eq(false)
     end
     it 'has allies' do
-      expect(response.allies).to eq(0)
+      expect(response.allies.length).to eq(0)
     end
     it 'was mutual' do
       expect(response.is_mutual?).to eq(false)
     end
     it 'has an ammount of allies' do
-      expect(response.is_mutual?).to be_a_kind_of(Integer)
+      expect(response.ally_count).to be_a_kind_of(Integer)
     end
   end
 end
