@@ -1,8 +1,8 @@
 require 'eve_crest'
 
-RSpec.describe EveCrest::Request::Wars do
+RSpec.describe EveCrest::Request::War do
   context 'Get War' do
-    request = EveCrest::Request::Wars.new('/1/')
+    request = EveCrest::Request::War.new('1')
     response = request.get
     it 'is successful' do
       expect(response.success?).to eq(true)
@@ -31,7 +31,7 @@ RSpec.describe EveCrest::Request::Wars do
     it 'returns war defender id' do
       expect(response.defender_id).to eq(true)
     end
-    it 'returns war defender id' do
+    it 'returns war defender name' do
       expect(response.defender_name).to eq(true)
     end
     it 'has defender kills' do
@@ -48,6 +48,9 @@ RSpec.describe EveCrest::Request::Wars do
     end
     it 'was mutual' do
       expect(response.is_mutual?).to eq(false)
+    end
+    it 'has an ammount of allies' do
+      expect(response.is_mutual?).to be_a_kind_of(Integer)
     end
   end
 end

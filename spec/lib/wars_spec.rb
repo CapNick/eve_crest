@@ -8,7 +8,7 @@ RSpec.describe EveCrest::Request::Wars do
       expect(response.success?).to eq(true)
       end
     it 'has an ammount of wars' do
-      expect(response.count).to eq(true)
+      expect(response.count).to be_a_kind_of(Integer)
     end
   end
 end
