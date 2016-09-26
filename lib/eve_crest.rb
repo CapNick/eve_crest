@@ -37,6 +37,8 @@ require_relative 'requests/incursions'
 ##Wars
 require_relative 'requests/wars'
 require_relative 'requests/war'
+##Bloodlines
+require_relative 'requests/bloodlines'
 
 #Responses
 ##Constellation
@@ -67,6 +69,11 @@ require_relative 'responses/incursions'
 ##Wars
 require_relative 'responses/wars'
 require_relative 'responses/war'
+##Bloodlines
+require_relative 'responses/bloodlines'
+
+
+
 
 #Extra Information
 DEFAULT_CACHE_TIME = 86400000
