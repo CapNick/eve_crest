@@ -8,12 +8,12 @@ module EveCrest
       @type = json['incursionType']
       @state = json['state']
       @has_boss = json['hasBoss']
-      @infested_systems = get_systems(json['infestedSolarSystems'])
+      @infested_systems = get_system_ids(json['infestedSolarSystems'])
       @constellation_id = json['constellation']['id']
     end
 
     private
-    def get_systems(systems_raw)
+    def get_system_ids(systems_raw)
 
     end
   end

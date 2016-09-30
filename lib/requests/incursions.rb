@@ -1,8 +1,8 @@
 module EveCrest
   module Request
-    class Bloodlines
+    class Incursions
       def get
-        EveCrest::Response::Bloodlines.new(EveCrest::HTTPSRequest.get('/constellations/'))
+        EveCrest::Response::Incursions.new(EveCrest::HTTPSRequest.get('/incursions/'))
       end
     end
   end
