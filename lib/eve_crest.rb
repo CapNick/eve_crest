@@ -7,6 +7,9 @@ require 'redis'
 #Base
 require_relative 'https_request'
 require_relative 'base_response'
+#Extra Classes
+require_relative 'bloodline'
+require_relative 'incursion'
 
 #Requests
 ##Constellation

@@ -14,7 +14,11 @@ module EveCrest
 
     private
     def get_system_ids(systems_raw)
-
+      systems = Array.new
+      systems_raw.each do |sys|
+        systems.push(sys['id'])
+      end
+      systems
     end
   end
 end

@@ -4,7 +4,7 @@ module EveCrest
       def all
         bloodlines = Array.new
         data['items'].each do |bloodline_data|
-          bloodlines.push(EveCrest::Incursion.new(bloodline_data))
+          bloodlines.push(EveCrest::Bloodline.new(bloodline_data))
         end
         bloodlines
       end
