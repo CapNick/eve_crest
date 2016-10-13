@@ -1,8 +1,6 @@
 # EveCrest
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/eve_crest`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome, eve_crest is a library designed to abstract the crest api system provided by CCP for EVE Online. 
 
 ## Installation
 
@@ -19,17 +17,37 @@ And then execute:
 Or install it yourself as:
 
     $ gem install eve_crest
+## Dependencies
+```
+gem 'json', '~> 2.0.2'
+gem 'redis'
+gem 'httparty'
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+Example: to get a specific region
+```
+request = EveCrest::Request::Region.new(10000001)
+response = request.get
+region_name = response.name
+```
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
+## What is implemented?
+ 
+ - Bloodlines
+ - Constellations
+ - Incursions
+ - Moons
+ - Planets
+ - Regions
+ - server information (version, time, etc...)
+ - Solar Systems
+ - Stargates
+ - Wars
+ 
+ The rest is a work in progress.
+  for a full list of endpoints available on the crest system go to [The third party read the docs page](https://eveonline-third-party-documentation.readthedocs.io/en/latest/).
 ## Contributing
 
 Bug reports and pull requests are welcome on GitLab at https://git.capnick.co.uk/capnick/eve_crest.
