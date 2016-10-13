@@ -5,6 +5,7 @@ group :development do
   #gem 'guard-rspec', '~> 4.2.10'
   gem 'awesome_print'
   gem 'simplecov'
+  gem 'rake'
 end
 
 gem 'json', '~> 2.0.2'
