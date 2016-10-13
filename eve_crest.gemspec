@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "A libary to make using EVE's 'Crest' api system esaier to use"
   spec.description   = "A libary to make using EVE's 'Crest' api system esaier to use"
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://git.capnick.co.uk/capnick/eve_crest"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
