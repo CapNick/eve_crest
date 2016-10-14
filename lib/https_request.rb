@@ -1,6 +1,6 @@
 module EveCrest
   class HTTPSRequest
-    def self.get(_uri)
+    def self.get(_uri, expire_time)
       # Need to make get have two params so the time to be cached can be respected
       uri = URI("#{CREST_URL}#{_uri}")
 
@@ -8,7 +8,7 @@ module EveCrest
 
       if cache.nil?
         response = do_request(uri)
-        response[:cachedUntil] = Time.now.to_s
+        response[:cachedUntil] = (Time.now + expire_time).to_s
         REDIS.set(uri, response.to_json)
       else
         cache_json = JSON.parse(cache, :quirks_mode => true)

@@ -6,7 +6,7 @@ module EveCrest
           @id = param
         end
         def get
-          EveCrest::Response::Opportunities::Task.new(EveCrest::HTTPSRequest.get("/opportunities/tasks/#{@id}/"))
+          EveCrest::Response::Opportunities::Task.new(EveCrest::HTTPSRequest.get("/opportunities/tasks/#{@id}/",3600))
         end
       end
     end

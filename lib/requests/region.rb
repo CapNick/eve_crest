@@ -5,7 +5,7 @@ module EveCrest
         @id = param
       end
       def get
-        EveCrest::Response::Region.new(EveCrest::HTTPSRequest.get("/regions/#{@id}/"))
+        EveCrest::Response::Region.new(EveCrest::HTTPSRequest.get("/regions/#{@id}/",3600))
       end
     end
   end

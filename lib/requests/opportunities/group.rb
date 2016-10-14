@@ -6,7 +6,7 @@ module EveCrest
           @id = param
         end
         def get
-          EveCrest::Response::Opportunities::Group.new(EveCrest::HTTPSRequest.get("/opportunities/groups/#{@id}/"))
+          EveCrest::Response::Opportunities::Group.new(EveCrest::HTTPSRequest.get("/opportunities/groups/#{@id}/", 3600))
         end
       end
     end

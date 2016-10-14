@@ -5,7 +5,7 @@ module EveCrest
         @id = param
       end
       def get
-        EveCrest::Response::Planet.new(EveCrest::HTTPSRequest.get("/planets/#{@id}/"))
+        EveCrest::Response::Planet.new(EveCrest::HTTPSRequest.get("/planets/#{@id}/",3600))
       end
     end
   end

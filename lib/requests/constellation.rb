@@ -5,7 +5,7 @@ module EveCrest
         @id = param
       end
       def get
-        EveCrest::Response::Constellation.new(EveCrest::HTTPSRequest.get("/constellations/#{@id}/"))
+        EveCrest::Response::Constellation.new(EveCrest::HTTPSRequest.get("/constellations/#{@id}/",3600))
       end
     end
   end

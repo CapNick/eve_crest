@@ -5,7 +5,7 @@ module EveCrest
         @id = param
       end
       def get
-        EveCrest::Response::War.new(EveCrest::HTTPSRequest.get("/wars/#{@id}/"))
+        EveCrest::Response::War.new(EveCrest::HTTPSRequest.get("/wars/#{@id}/",86400))
       end
     end
   end
