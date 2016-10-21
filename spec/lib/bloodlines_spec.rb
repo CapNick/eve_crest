@@ -13,8 +13,9 @@ RSpec.describe EveCrest::Request::Bloodlines do
     it 'Returns a Bloodline object' do
       expect(response.all[0]).to be_a_kind_of(EveCrest::Bloodline)
     end
-    # it 'Returns a Bloodline ' do
-    #   expect(response.bloodlines[0]).to be a_kind_of(EveCrest::Bloodline)
-    # end
+    it 'Returns an ammount of Bloodlines' do
+      expect(response.count).to be_a_kind_of(Integer)
+    end
+
   end
 end

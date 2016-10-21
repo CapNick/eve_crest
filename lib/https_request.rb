@@ -1,5 +1,12 @@
 module EveCrest
   class HTTPSRequest
+
+    ##
+    #
+    #
+    #
+    ##
+
     def self.get(_uri, expire_time)
       # Need to make get have two params so the time to be cached can be respected
       uri = URI("#{CREST_URL}#{_uri}")
