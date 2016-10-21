@@ -10,6 +10,9 @@ RSpec.describe EveCrest::Request::Moon do
     it 'has a name' do
       expect(response.name).to eq('Tanoo V - Moon 1')
     end
+    it 'has a position' do
+      expect(response.position).to be_a_kind_of(Hash)
+    end
     it 'has a type id' do
       expect(response.type).to eq(14)
     end

@@ -7,6 +7,9 @@ RSpec.describe EveCrest::Request::SolarSystem do
     it 'is successful' do
       expect(response.success?).to eq(true)
     end
+    it 'has a position' do
+      expect(response.position).to be_a_kind_of(Hash)
+    end
     it 'has a name' do
       expect(response.name).to eq('Tanoo')
     end

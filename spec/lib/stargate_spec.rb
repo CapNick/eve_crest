@@ -10,6 +10,9 @@ RSpec.describe EveCrest::Request::Stargate do
     it 'has a name' do
       expect(response.name).to eq('Stargate (Tanoo)')
     end
+    it 'has a position' do
+      expect(response.position).to be_a_kind_of(Hash)
+    end
     it 'has a destination' do
       expect(response.destination).to eq(30000001)
     end

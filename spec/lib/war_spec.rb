@@ -1,7 +1,7 @@
 require 'eve_crest'
 
 RSpec.describe EveCrest::Request::War do
-  context 'Get War' do
+  context 'Get War without allies' do
     request = EveCrest::Request::War.new('1')
     response = request.get
     it 'is successful' do

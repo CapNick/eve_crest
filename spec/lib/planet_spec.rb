@@ -10,6 +10,9 @@ RSpec.describe EveCrest::Request::Planet do
     it 'has a name' do
       expect(response.name).to eq('Tanoo I')
     end
+    it 'has a position' do
+      expect(response.position).to be_a_kind_of(Hash)
+    end
     it 'has a parent solar system' do
       expect(response.solar_system).to eq(30000001)
     end
